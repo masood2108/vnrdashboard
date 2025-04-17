@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #1e2a47, #121d31); /* Deep blue gradient */
+  color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 30px 40px;
+}
+
+.dashboard-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ff7043; /* Light Orange for a more professional highlight */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* VNR VJIET Logo */
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.card {
+  background: rgba(127, 125, 125, 0.1);
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #fcf9f9;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+
+.card h5 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ff7043;
+}
+
+.card .highlight {
+  font-size: 32px;
+  font-weight: 700;
+  color: #64b5f6;
+}
+
+.card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+}
+
+.card .air-bar {
+  background-color: #64b5f6;
+  height: 10px;
+  width: 80%;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.card .air-bar[style="width: 50%"] {
+  background-color: #81c784;
+}
+
+.card .air-bar[style="width: 76%"] {
+  background-color: #ff7043;
+}
+
+.card canvas {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.row {
+  margin-top: 40px;
+}
+
+.col-md-4 {
+  margin-bottom: 30px;
+}
+
+iframe {
+  border-radius: 15px;
+}
+
+.animate__animated {
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 28px;
+  }
+  .card h5 {
+    font-size: 18px;
+  }
+  .highlight {
+    font-size: 20px;
+  }
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+}
+/* Dropdown styling */
+.dropdown-toggle {
+    background-color: #ff7043;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu {
+    background-color: #1e2a47;
+    border-radius: 10px;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #ff7043;
+    color: #fff;
+  }
+  
